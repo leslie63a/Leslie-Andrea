@@ -1,0 +1,11 @@
+header{
+              color: red;
+              font-family: Impact;
+            }
+            body{
+                text-align: center;
+                color: white;
+                background-color: black;
+                 padding: 14px;
+                 font-size: 27px;
+            }

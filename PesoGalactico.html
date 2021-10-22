@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Peso Galactico</title>
+</head>
+<body>
+<h1>Peso Galactico</h1>
+<img src="suma.jpg" height="150" width="160" >
+<form>
+	<label>Tu Peso:</label><input type=text id=Num1><br>
+	<label>Gravedad del planeta que desea saber su peso:</label><input type=text id=Num2><br>
+	<label>Resultado</label><input type=text id=Suma><br>
+	<input type=button value=Calcular id=btnCalcular onclick="Sumar()">
+	<input type=button value=Nuevo id=btnNuevo onclick="Borrar()">
+
+	<script>
+		function Sumar(){
+			var n1,n2,Su;
+			n1=parseInt(document.getElementById("Num1").value);
+			n2=parseInt(document.getElementById("Num2").value);
+			Su=(n1*n2)/9.81;
+			document.getElementById("Suma").value=Su;
+		} 
+		function Borrar(){
+			document.getElementById("Num1").value="";
+			document.getElementById("Num2").value="";
+			document.getElementById("Suma").value="";
+		}
+	</script>
+</form>
+</body>
+<style>
+header {
+	color: green;
+	font-family: sans-serif;
+}
+body{
+                text-align: center;
+                color: black;
+                background-color: grey;
+                 padding: 12px;
+                 font-size: 25px;
+    }
+
+</style>
+</html
